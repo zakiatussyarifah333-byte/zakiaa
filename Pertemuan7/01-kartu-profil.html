@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>01 - Kartu Profil - Sebelum</title>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN (TO-DO LIST):
+    1. Tambahkan CSS reset dasar (margin: 0, padding: 0, box-sizing: border-box).
+    2. Atur body agar konten berada di tengah layar (gunakan Flexbox, min-height: 100vh, background warna abu-abu terang).
+    3. Bungkus elemen di bawah ke dalam class ".profile-card".
+    4. Beri ".profile-card" background putih, lebar sekitar 300px, padding, border-radius (misal 15px), text-align center, dan box-shadow halus.
+    5. Atur gambar (img) agar lebarnya misal 100px, height 100px, object-fit cover, dan border-radius 50% (lingkaran sempurna).
+    6. Hilangkan garis bawah pada link <a> (text-decoration: none), beri warna background, padding, border-radius, dan ubah display menjadi inline-block.
+    7. Beri efek hover pada link <a> agar warnanya sedikit berubah saat kursor diarahkan.
+    -->
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .profile-card {
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-card a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        /* 7. Hover */
+        .profile-card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <img src="ds9vx3hl0rtqifj.jpeg" alt="foto kia">
+        <h2>Zakiatus Syarifah</h2>
+        <p>Web Developer</p>
+        <a href="#">Hubungi Saya</a>
+    </div>
+</body>
+</html>

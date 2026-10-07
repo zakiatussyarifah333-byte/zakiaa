@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>10 - Galeri Estetik</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        /* Judul */
+        .judul {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .judul h1 {
+            font-size: 32px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .judul p {
+            color: #777;
+            font-size: 15px;
+        }
+
+        /* Gallery */
+        .gallery {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fill, minmax(250px, 1fr));
+
+            gap: 22px;
+        }
+
+        /* Kotak gambar */
+        .img-box {
+            aspect-ratio: 1 / 1;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            background: white;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.10);
+
+            cursor: pointer;
+        }
+
+        /* Gambar */
+        .img-box img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            filter: grayscale(100%);
+
+            transition:
+                transform 0.5s ease,
+                filter 0.5s ease;
+        }
+
+        /* Hover */
+        .img-box:hover img {
+            filter: grayscale(0%);
+
+            transform: scale(1.08);
+        }
+
+        /* Efek saat mouse */
+        .img-box:hover {
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Responsive HP */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 25px 15px;
+            }
+
+            .judul h1 {
+                font-size: 25px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- JUDUL -->
+    <div class="judul">
+
+        <h1>My Aesthetic Gallery</h1>
+
+        <p>
+            Koleksi foto favorit dalam satu galeri
+        </p>
+
+    </div>
+
+
+    <!-- GALERI -->
+    <div class="gallery">
+
+        <!-- FOTO 1 -->
+        <div class="img-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                alt="Pemandangan Gunung"
+            >
+
+        </div>
+
+
+        <!-- FOTO 2 -->
+        <div class="img-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=80"
+                alt="Kota"
+            >
+
+        </div>
+
+
+        <!-- FOTO 3 -->
+        <div class="img-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80"
+                alt="Bunga"
+            >
+
+        </div>
+
+
+        <!-- FOTO 4 -->
+        <div class="img-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                alt="Pantai"
+            >
+
+        </div>
+
+
+        <!-- FOTO 5 -->
+        <div class="img-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+                alt="Dermaga"
+            >
+
+        </div>
+
+
+        <!-- FOTO 6 -->
+        <div class="img-box">
+
+            <img
+                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
+                alt="Kamera"
+            >
+
+        </div>
+
+    </div>
+
+</body>
+</html>
