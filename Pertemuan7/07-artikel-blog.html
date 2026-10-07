@@ -2,113 +2,54 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>05 - Pricing Table - Sebelum</title>
+    <title>07 - Artikel Blog - Sebelum</title>
 
     <style>
-       
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        
-        .pricing-container {
-            display: flex; 
-            justify-content: center; 
-            gap: 20px; 
-            padding: 50px;
-            background-color: #f9f9f9; 
-        }
-
-       
-        .plan {
-            background-color: white; 
-            border: 1px solid #ddd; 
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center; 
-            width: 250px; 
-            transition: transform 0.3s; 
-        }
-
-        .plan h3 {
-            margin-bottom: 15px;
-        }
-
-        .plan h2 {
-            margin-bottom: 20px;
-        }
-
-        .plan ul {
-            list-style-type: none; 
-            margin-bottom: 20px;
-        }
-
-        .plan ul li {
-            margin-bottom: 10px; 
-        }
-
-        .plan button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #007bff; 
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .plan button:hover {
-            background-color: #0056b3; 
-        }
-
-        
-        .popular {
-            transform: scale(1.05); 
-            border-color: #ffcc00; 
-        }
+        article {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+article p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+article p:first-of-type::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+    float: left;
+    line-height: 0.9;
+    margin-right: 8px;
+}
+article blockquote {
+    background-color: #f1f1f1;
+    border-left: 6px solid #3498db;
+    padding: 20px;
+    margin: 25px 0;
+    font-style: italic;
+}
     </style>
 </head>
 <body>
     <!-- 
     INSTRUKSI PENGERJAAN:
-    1. Gunakan CSS Grid atau Flexbox pada ".pricing-container" untuk menyejajarkan 3 paket secara horizontal.
-    2. Berikan gaya dasar pada setiap kartu ".plan" (border, padding, border-radius, background putih, text-align center).
-    3. Khusus untuk paket tengah (berikan class .popular), ubah ukuran agar sedikit lebih menonjol (transform: scale(1.05) atau padding lebih besar).
-    4. Ubah warna border/header pada paket popular untuk membedakannya.
-    5. Hilangkan bullet pada daftar fitur (ul) dan berikan jarak.
+    1. Atur <article> agar lebar maksimal (max-width) sekitar 700px dan posisikan di tengah layar (margin: 0 auto), beri padding.
+    2. Ubah font-family agar lebih modern, perbesar ukuran font pada paragraf (misal 18px), dan perlebar line-height (misal 1.6) agar nyaman dibaca.
+    3. Gunakan pseudo-element "p::first-letter" pada paragraf pertama untuk membuat efek Drop Cap (huruf kapital besar di awal teks).
+    4. Buat styling untuk <blockquote>: beri background warna lembut, border kiri yang tebal dengan warna mencolok, padding, font miring (italic).
     -->
-    <div class="pricing-container">
-        <div class="plan">
-            <h3>Basic</h3>
-            <h2>Gratis</h2>
-            <ul>
-                <li>1 Pengguna</li>
-                <li>Penyimpanan 1GB</li>
-                <li>Dukungan Komunitas</li>
-            </ul>
-            <button>Pilih Basic</button>
-        </div>
-        <div class="plan popular">
-            <h3>Pro (Populer)</h3>
-            <h2>Rp 100.000/bln</h2>
-            <ul>
-                <li>5 Pengguna</li>
-                <li>Penyimpanan 50GB</li>
-                <li>Dukungan Prioritas</li>
-            </ul>
-            <button>Pilih Pro</button>
-        </div>
-        <div class="plan">
-            <h3>Enterprise</h3>
-            <h2>Hubungi Kami</h2>
-            <ul>
-                <li>Pengguna Tak Terbatas</li>
-                <li>Penyimpanan Unlimited</li>
-                <li>Dukungan 24/7</li>
-            </ul>
-            <button>Pilih Enterprise</button>
-        </div>
-    </div>
+    <article>
+        <h1>Rahasia Belajar CSS dengan Cepat</h1>
+        <p class="intro">Belajar CSS seringkali terasa membingungkan bagi pemula karena banyaknya properti yang harus dihafal. Namun, kuncinya bukanlah menghafal, melainkan memahami konsep dasarnya seperti Box Model dan Flexbox.</p>
+        
+        <p>Banyak developer yang terjebak dalam kebiasaan copy-paste tanpa tahu maksud kodenya. Hal ini membuat mereka kesulitan saat harus melakukan debugging tampilan yang rusak.</p>
+        
+        <blockquote>
+            "Pemahaman konseptual jauh lebih berharga daripada hafalan sintaks. CSS adalah tentang memahami aliran dokumen."
+        </blockquote>
+        
+        <p>Mulailah dengan proyek-proyek kecil. Jangan langsung mencoba membangun clone dari Netflix atau Twitter. Buatlah tombol sederhana, kartu profil, lalu beranjak ke landing page.</p>
+    </article>
 </body>
 </html>
