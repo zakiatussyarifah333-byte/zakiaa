@@ -5,9 +5,7 @@
    File CSS     : style.css (External CSS Terpadu)
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   1. RESET & DASAR TAMPILAN (BASE STYLES)
-   -------------------------------------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,9 +20,6 @@ body {
     min-height: 100vh;
 }
 
-/* --------------------------------------------------------------------------
-   2. SOAL 1: HALAMAN LOGIN (login.html)
-   -------------------------------------------------------------------------- */
 .login-body {
     display: flex;
     justify-content: center;
@@ -112,9 +107,7 @@ body {
     background-color: #0b5ed7;
 }
 
-/* --------------------------------------------------------------------------
-   3. SOAL 2: DASHBOARD & RINGKASAN KEUANGAN (dashboard.html)
-   -------------------------------------------------------------------------- */
+
 .dashboard-container {
     display: flex;
     min-height: 100vh;
@@ -212,7 +205,7 @@ body {
     margin-top: 4px;
 }
 
-/* Cards Ringkasan Keuangan */
+
 .cards-row {
     display: flex;
     gap: 25px;
@@ -246,9 +239,7 @@ body {
     color: #212529;
 }
 
-/* --------------------------------------------------------------------------
-   4. SOAL 3: FORM INPUT JURNAL UMUM (jurnal_umum.html)
-   -------------------------------------------------------------------------- */
+
 .form-page-container {
     max-width: 720px;
     margin: 40px auto;
@@ -402,9 +393,7 @@ body {
     background-color: #5c636a;
 }
 
-/* --------------------------------------------------------------------------
-   5. SOAL 4: TABEL LAPORAN LABA RUGI (laba_rugi.html)
-   -------------------------------------------------------------------------- */
+
 .report-page-container {
     max-width: 800px;
     margin: 40px auto;
