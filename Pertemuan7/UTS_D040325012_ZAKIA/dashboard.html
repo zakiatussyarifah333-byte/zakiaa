@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Keuangan - PT Prima Akuntindo</title>
+    <!-- External CSS Terpadu -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Kolom Sidebar Kiri -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <h3 class="sidebar-title">Menu Utama</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="dashboard.html" class="active">&gt; Dashboard</a></li>
+                    <li><a href="jurnal_umum.html">&gt; Jurnal</a></li>
+                    <li><a href="#">&gt; Buku Besar</a></li>
+                    <li><a href="laba_rugi.html">&gt; Laba Rugi</a></li>
+                    <li><a href="#">&gt; Neraca</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-bottom">
+                <a href="login.html" class="sidebar-logout">[Logout]</a>
+            </div>
+        </aside>
+
+        <!-- Kolom Konten Utama Kanan -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>DASHBOARD KEUANGAN</h1>
+                <p>Selamat datang, Manajer Keuangan!</p>
+            </header>
+
+            <!-- Ringkasan Saldo (Cards Horizontal) -->
+            <section class="cards-row">
+                <div class="card-finance">
+                    <div class="card-label">SALDO KAS</div>
+                    <div class="card-value">Rp 150.000.000</div>
+                </div>
+
+                <div class="card-finance">
+                    <div class="card-label">PIUTANG</div>
+                    <div class="card-value">Rp 45.500.000</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
+

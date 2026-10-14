@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Jurnal Umum - PT Prima Akuntindo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="form-page-container">
+        <div class="nav-back-bar">
+            <a href="dashboard.html" class="nav-back-link">&larr; Kembali ke Dashboard</a>
+        </div>
+
+        <div class="card-form">
+            <h2 class="form-title">FORM INPUT JURNAL UMUM</h2>
+
+            <form action="dashboard.html" method="post">
+                <div class="form-row">
+                    <label for="tanggal" class="label-col">Tanggal Transaksi</label>
+                    <div class="input-col">
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="no_bukti" class="label-col">No. Bukti</label>
+                    <div class="input-col">
+                        <input type="text" id="no_bukti" name="no_bukti" placeholder="Contoh: BKK-001" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="keterangan" class="label-col">Keterangan</label>
+                    <div class="input-col">
+                        <textarea id="keterangan" name="keterangan" rows="3" placeholder="Masukkan keterangan transaksi" required></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="nama_akun" class="label-col">Nama Akun</label>
+                    <div class="input-col">
+                        <select id="nama_akun" name="nama_akun" required>
+                            <option value="" disabled selected>-- Pilih Akun --</option>
+                            <option value="1101">1101 - Kas</option>
+                            <option value="1102">1102 - Piutang Usaha</option>
+                            <option value="1103">1103 - Perlengkapan</option>
+                            <option value="4101">4101 - Pendapatan Jasa</option>
+                            <option value="5101">5101 - Beban Gaji Karyawan</option>
+                            <option value="5102">5102 - Beban Sewa Gedung</option>
+                            <option value="5103">5103 - Beban Perlengkapan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <span class="label-col">Posisi Saldo</span>
+                    <div class="input-col">
+                        <div class="radio-group">
+                            <label for="saldo_debit">
+                                <input type="radio" id="saldo_debit" name="posisi_saldo" value="Debit" checked required>
+                                Debit
+                            </label>
+                            <label for="saldo_kredit">
+                                <input type="radio" id="saldo_kredit" name="posisi_saldo" value="Kredit" required>
+                                Kredit
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="nominal" class="label-col">Nominal (Rp)</label>
+                    <div class="input-col">
+                        <input type="number" id="nominal" name="nominal" placeholder="Contoh: 15000000" min="0" step="1000" required>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">SIMPAN TRANSAKSI</button>
+                    <a href="dashboard.html" class="btn-cancel">BATAL</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
