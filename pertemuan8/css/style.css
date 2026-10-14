@@ -1,12 +1,5 @@
-/* ==========================================================================
-   UJIAN TENGAH SEMESTER (UTS) - PEMROGRAMAN WEB
-   Program Studi: D3 Sistem Informasi Akuntansi
-   Studi Kasus  : PT Prima Akuntindo
-   File CSS     : style.css (External CSS Terpadu)
-   ========================================================================== */
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -393,7 +386,6 @@ body {
     background-color: #5c636a;
 }
 
-
 .report-page-container {
     max-width: 800px;
     margin: 40px auto;
@@ -482,7 +474,6 @@ body {
     font-size: 14px;
 }
 
-/* Zebra Striping */
 .report-table tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
@@ -514,9 +505,6 @@ body {
     font-family: 'Consolas', 'Courier New', monospace;
 }
 
-/* --------------------------------------------------------------------------
-   6. RESPONSIVE DESIGN (MEDIA QUERY)
-   -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
     .dashboard-container {
         flex-direction: column;
